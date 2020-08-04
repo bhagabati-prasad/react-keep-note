@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body {
   min-height: 100vh;
+  width: 100vw;
+  background: #eee;
+}
+
+/* header */
+header {
+  background: #8c0;
+  padding: 14px 40px;
+}
+
+/* create note box */
+.create_note {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.create_note .form_box {
+  background: #fff;
+  margin: 10px 0;
+  padding: 10px 17px;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 0 12px #999;
+}
+.create_note form input,
+textarea {
+  width: 400px;
+  display: block;
+  border-radius: 8px;
+  padding: 8px 14px;
+  margin: 14px 0;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  background: #eee;
+}
+.create_note form textarea {
+  width: 400px;
+  height: 100px;
+}
+.create_note form button {
+  padding: 7px 34px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+/* single note */
+.note {
+  width: 250px;
+  float: left;
+  padding: 10px 20px;
+  margin: 14px 7px 7px 24px;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 2px 2px 13px #999;
+}
+.note h2 {
+  color: #444;
+}
+.note p {
+  color: #777;
+}
+.note button {
+  padding: 6px 10px;
+  margin: 10px 0;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  cursor: pointer;
+  color: #fff;
+  background: #222;
+  /* box-shadow: 0 0 10px #999; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* footer */
+footer {
+  color: #fff;
+  background: #000;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
